@@ -24,4 +24,4 @@ This is the example image to begin with :
 
 This is the final image after running the filter :
 
-![Image](after.png)
+![Image](sobel.png)
