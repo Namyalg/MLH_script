@@ -1,5 +1,9 @@
+#This script is run the Google Colaboratory
+#Import and dependencies
 import numpy as np
 import cv2
+
+#Google Colab does not support cv.imshow(), hence the change
 from google.colab.patches import cv2_imshow
 from math import sqrt, atan
 
@@ -42,6 +46,7 @@ def convolute(img, kernel, height, width):
       apply_filter.append(sum(sum(product)))
 
   #The pixels are converted back to the image
+  #The size of the image reduces on applying convolution
   apply_filter = np.array(apply_filter).reshape(height-1, width-1)
   return(apply_filter)
 
@@ -68,7 +73,7 @@ def sobel(img):
       in_y = pow(convoluted_Y[i, j], 2)
       gradient = sqrt(in_x + in_y)
       reusultant.append(grad) 
-  resultant = np.array(resultant).reshape(height-1, width-1)
+  resultant = np.array(resultant).reshape(height - 1, width - 1)
   cv2_imshow(resultant)
 
 if __name__ == "__main__":
