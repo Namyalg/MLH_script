@@ -72,5 +72,6 @@ def sobel(img):
   cv2_imshow(resultant)
 
 if __name__ == "__main__":
-    img = cv2.imread("/path to image", 0)
+    #The 0, converts the image to grayscale 
+    img = cv2.imread("Lion.JPG", 0)
     sobel(img)
