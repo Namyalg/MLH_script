@@ -20,7 +20,7 @@
 
 This is the example image to begin with :
 
-![Image](Lion.JPG)
+![Image](before.jpg)
 
 This is the final image after running the filter :
 
